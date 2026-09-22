@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ETERNEL - Mon assistant</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <header>
+    <h1>ETERNEL</h1>
+    <p>Mon assistant personnel pour la vie</p>
+  </header>
+
+  <div class="container">
+
+    <h2>Bienvenue 👋</h2>
+
+    <p>ETERNEL est votre espace personnel.</p>
+
+    <div class="card">
+      <button onclick="saluer()">Commencer</button>
+      <button onclick="parler()">🔊 Parler</button>
+
+      <div id="message"></div>
+    </div>
+
+  </div>
+
+  <footer>
+    ETERNEL — Votre assistant personnel
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js");
+      });
+    }
+  </script>
+
+</body>
+</html>
