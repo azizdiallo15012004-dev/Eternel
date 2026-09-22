@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETERNEL - Mon assistant</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #101828;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px 15px;
+      background: #162447;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 10px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .container {
+      padding: 30px 20px;
+    }
+
+    button {
+      padding: 15px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    #message {
+      margin-top: 25px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>ETERNEL</h1>
+    <p>Mon assistant personnel pour la vie</p>
+  </header>
+
+  <div class="container">
+    <h2>Bienvenue 👋</h2>
+
+    <p>
+      ETERNEL est votre espace personnel.
+    </p>
+
+    <button onclick="saluer()">Commencer</button>
+
+    <div id="message"></div>
+  </div>
+
+  <script>
+    function saluer() {
+      document.getElementById("message").innerHTML =
+        "Bonjour 👋 Je suis ETERNEL, votre assistant personnel.";
+    }
+  </script>
+
+</body>
+</html>
