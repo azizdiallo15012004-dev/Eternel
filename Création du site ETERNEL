@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ETERNEL - Assistant personnel</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <header>
+    <h1>ETERNEL</h1>
+    <p>Votre assistant personnel pour la vie</p>
+  </header>
+
+  <main class="container">
+
+    <div class="card">
+      <h2>Bienvenue 👋</h2>
+
+      <p>
+        Je suis ETERNEL, votre assistant personnel.
+      </p>
+
+      <button onclick="saluer()">
+        🚀 Commencer
+      </button>
+
+      <button onclick="parler()">
+        🔊 Parler
+      </button>
+
+      <div id="message"></div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>ETERNEL © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
